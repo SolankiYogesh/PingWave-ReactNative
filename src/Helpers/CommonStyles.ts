@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native'
 
 import Colors from './Colors'
-import {moderateScale, scale, verticalScale, W_HEIGHT, W_WIDTH, widthPx} from './Responsive'
+import {W_HEIGHT, W_WIDTH} from './Responsive'
 
 export const CommonStyles = StyleSheet.create({
   centerItem: {
@@ -34,51 +34,6 @@ export const CommonStyles = StyleSheet.create({
   },
   viewFull: {
     height: '100%',
-    width: '100%'
-  }
-})
-
-export const styles = StyleSheet.create({
-  alignItems: {
-    alignItems: 'center'
-  },
-  backImageStyle: {
-    marginLeft: scale(20)
-  },
-  backImageStyleTop: {
-    marginTop: verticalScale(20)
-  },
-  fixedWidth: {
-    width: widthPx(43)
-  },
-  googleFullContainer: {
-    backgroundColor: Colors.transparent,
-    borderColor: Colors.greyShadeE8,
-    borderWidth: 1,
-    width: '100%'
-  },
-  inputPhoneStyle: {
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: moderateScale(10),
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: moderateScale(10),
-    flex: 1,
-    width: '100%'
-  },
-  inputStyle: {
-    flex: 1,
-    width: '100%'
-  },
-  marginBottom: {
-    alignSelf: 'center',
-    marginBottom: verticalScale(50),
-    width: '90%'
-  },
-  textStyle: {
-    color: Colors.blackShade2A30
-  },
-  width: {
-    marginBottom: verticalScale(20),
     width: '100%'
   }
 })

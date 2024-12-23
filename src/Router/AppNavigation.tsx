@@ -6,7 +6,11 @@ import {AuthScreen, ChatScreen} from '@/Screens'
 const Stack = createNativeStackNavigator()
 export default () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
+    >
       <Stack.Screen name={Screens.Auth} component={AuthScreen} />
       <Stack.Screen name={Screens.Main} component={ChatScreen} />
     </Stack.Navigator>
