@@ -1,11 +1,23 @@
 type AuthContextType = {
   login: Login
-  setLogin: (login: Login) => void
+  setLoginData: (login: Partial<Login>) => void
   register: Register
-  setRegister: (register: Register) => void
+  setRegisterData: (register: Partial<Register>) => void
 }
 import {createContext} from 'react'
 
 import type {Login, Register} from './AuthTypes'
 
-export default createContext<AuthContextType | undefined>(undefined)
+export default createContext<AuthContextType>({
+  login: {
+    email: '',
+    password: ''
+  },
+  register: {
+    email: '',
+    password: '',
+    username: ''
+  },
+  setLoginData: () => {},
+  setRegisterData: () => {}
+})
